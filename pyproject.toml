@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "finance-analyzer"
+version = "0.1.0"
+description = "A lightweight Python library for personal finance analysis and interactive visualization."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+keywords = ["finance", "budgeting", "visualization", "plotly", "pandas"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "pandas>=2.0",
+    "plotly>=5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Choco246700/finance-library"
+Repository = "https://github.com/Choco246700/finance-library"
+"Bug Tracker" = "https://github.com/Choco246700/finance-library/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["finance_analyzer*"]
